@@ -7,7 +7,7 @@ const SideBar = () => {
     const { collapseSidebar } = useProSidebar();
 
   return (
-    <>
+    <> <div style={{ display: 'flex', height: '100%' }}>
       <Sidebar>
         <Menu iconShape="square">
           <SubMenu label="Charts">
@@ -18,9 +18,10 @@ const SideBar = () => {
           <MenuItem> Calendar </MenuItem>
         </Menu>
       </Sidebar>
-      <main>
+      </div>
+      {/* <main>
         <button onClick={() => collapseSidebar()}>Collapse</button>
-      </main>
+      </main> */}
     </>
   );
 };

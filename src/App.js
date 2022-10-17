@@ -1,16 +1,17 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import CollapsibleExample from "./components/NavBarCustom";
+import Header from "./components/Header";
 import React from "react";
-import { ProSidebarProvider } from 'react-pro-sidebar';
-
 import SideBar from "./components/SideBar";
+import Footer from "./components/Footer";
 const App = () => {
   return (
     <>
       <div>
-        <CollapsibleExample />
+        <Header />
         <SideBar/>
+        <Footer/>
       </div>
+    
     </>
   );
 };
