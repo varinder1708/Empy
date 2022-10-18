@@ -1,4 +1,4 @@
-[
+export const navigationData = [
   {
     id: 1,
     text: "HTML",
