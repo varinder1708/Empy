@@ -1,4 +1,4 @@
-export const navigationData = [
+export const category = [
   {
     id: 1,
     text: "HTML",

@@ -1,10 +1,12 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./components/Header";
+
 import { Container, Row, Col } from "react-bootstrap";
 import React from "react";
+
 import SideBar from "./components/SideBar";
 import Footer from "./components/Footer";
-import Content from "./Content";
+import Routerconfig from "./config/Routerconfig";
 const App = () => {
   return (
     <>
@@ -16,9 +18,7 @@ const App = () => {
         </Row>
         <div style={{ display: "flex", height: "100%" }}>
           <SideBar />
-          <div>
-            <Content/>
-          </div>
+          <Routerconfig />
         </div>
         <Footer />
       </div>

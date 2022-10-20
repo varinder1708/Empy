@@ -6,19 +6,22 @@ import {
   SubMenu,
   useProSidebar,
 } from "react-pro-sidebar";
+import { subCategory } from "../../data/subCat";
+
 
 const SideBar = () => {
   const { collapseSidebar } = useProSidebar();
+  
 
   return (
     <>
       
         <Sidebar>
-          <Menu iconShape="square">
-            <SubMenu label="Charts">
+          <Menu>
+            {/* <SubMenu label="Charts">
               <MenuItem> Pie charts </MenuItem>
               <MenuItem> Line charts </MenuItem>
-            </SubMenu>
+            </SubMenu> */}
             <MenuItem> Documentation </MenuItem>
             <MenuItem> Calendar </MenuItem>
           </Menu>

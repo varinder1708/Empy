@@ -1,9 +1,10 @@
 import React from "react";
+import { BrowserRouter as Router,Routes, Route, Link } from 'react-router-dom';
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import { navigationData } from "../../data/category";
+import { category } from "../../data/category";
 
 function Header() {
   return (
@@ -13,9 +14,9 @@ function Header() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            {navigationData.map((data, key) => {
+            {category.map((data, key) => {
               return (
-                <Nav.Link href={data.text.toLowerCase()}>{data.text}</Nav.Link>
+                <Link to={data.text.toLowerCase()} className="nav-link">{data.text}</Link>
               );
             })}
 
