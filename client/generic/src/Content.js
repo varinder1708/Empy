@@ -5,12 +5,20 @@ import {
   useLocation,
   useParams,
 } from "react-router-dom";
+import SideBar from "./components/SideBar";
+import { getParams } from "./config/Util";
 
 const Content = () => {
-  let { category } = useParams();
+  //let { category } = useParams();
+  const category = getParams();
   console.log(category);
 
-  return <>content-{category}</>;
+  return (
+    <>
+      <SideBar />
+      content-{category}
+    </>
+  );
 };
 
 export default Content;

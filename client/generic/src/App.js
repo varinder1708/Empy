@@ -17,7 +17,7 @@ const App = () => {
           </Col>
         </Row>
         <div style={{ display: "flex", height: "100%" }}>
-          <SideBar />
+          
           <Routerconfig />
         </div>
         <Footer />

@@ -7,10 +7,13 @@ import {
   useProSidebar,
 } from "react-pro-sidebar";
 import { subCategory } from "../../data/subCat";
+import { getParams } from "../config/Util";
 
 
 const SideBar = () => {
   const { collapseSidebar } = useProSidebar();
+  
+  const category=getParams();
   
 
   return (
@@ -22,7 +25,7 @@ const SideBar = () => {
               <MenuItem> Pie charts </MenuItem>
               <MenuItem> Line charts </MenuItem>
             </SubMenu> */}
-            <MenuItem> Documentation </MenuItem>
+            <MenuItem> Documentation-{category} </MenuItem>
             <MenuItem> Calendar </MenuItem>
           </Menu>
         </Sidebar>
