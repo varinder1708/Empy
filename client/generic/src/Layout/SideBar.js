@@ -13,8 +13,8 @@ import { getParamsfromurl, fetchAllSubCategories } from "../config/Util";
 const SideBar = () => {
   const { collapseSidebar } = useProSidebar();
 
-  const [categoryFromUrl, subcategoryFromUrl] = getParamsfromurl();
-
+  const [categoryFromUrl] = getParamsfromurl();
+ //based on category from url fetch all subcategorries from array
   return (
     <>
       <Sidebar>
