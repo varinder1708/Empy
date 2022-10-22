@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import { Container, Row, Col } from "react-bootstrap";
 import React from "react";
 
-import SideBar from "./components/SideBar";
+import SideBar from "./Layout/SideBar";
 import Footer from "./components/Footer";
 import Routerconfig from "./config/Routerconfig";
 const App = () => {

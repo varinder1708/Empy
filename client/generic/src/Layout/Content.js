@@ -5,18 +5,18 @@ import {
   useLocation,
   useParams,
 } from "react-router-dom";
-import SideBar from "./components/SideBar";
-import { getParams } from "./config/Util";
+import SideBar from "./SideBar";
+import { getParamsfromurl } from "../config/Util";
+import Middle from "./Middle";
 
 const Content = () => {
   //let { category } = useParams();
-  const category = getParams();
-  console.log(category);
+  const [categoryFromUrl, subcategoryFromUrl] = getParamsfromurl();
 
   return (
     <>
       <SideBar />
-      content-{category}
+      <Middle />
     </>
   );
 };

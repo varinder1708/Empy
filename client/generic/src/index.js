@@ -16,9 +16,9 @@ root.render(
   <React.StrictMode>
     <ProSidebarProvider>
       <Router>
-        <QueryParams>
+        {/* <QueryParams> */}
           <App />
-        </QueryParams>
+        {/* </QueryParams> */}
       </Router>
     </ProSidebarProvider>
   </React.StrictMode>

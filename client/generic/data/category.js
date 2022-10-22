@@ -1,10 +1,10 @@
-export const category = [
+export const category_data = [
   {
     id: 1,
-    text: "HTML",
+    cat: "html",
   },
   {
     id: 2,
-    text: "REACT",
+    cat: "react",
   },
 ];

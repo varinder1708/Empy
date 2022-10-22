@@ -4,7 +4,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import { category } from "../../data/category";
+import { category_data } from "../../data/category";
 
 function Header() {
   return (
@@ -14,9 +14,9 @@ function Header() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            {category.map((data, key) => {
+            {category_data.map((data, key) => {
               return (
-                <Link to={data.text.toLowerCase()} className="nav-link">{data.text}</Link>
+                <Link to={data.cat} className="nav-link">{data.cat}</Link>
               );
             })}
 

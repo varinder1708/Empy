@@ -1,20 +1,32 @@
-export const subCategory= [
+export const subCategory_data= [
   {
     id: 1,
     catId: 1,
     cat:"html",
-    text: "Introduction",
+    subc: "introduction",
   },
   {
     id: 2,
     catId: 1,
     cat:"html",
-    text: "Basic",
+    subc: "basic",
   },
   {
     id: 3,
     catId: 1,
     cat:"html",
-    text: "Comments",
+    subc: "comments",
+  },
+  {
+    id: 4,
+    catId: 2,
+    cat:"react",
+    subc: "hooks",
+  },
+  {
+    id: 5,
+    catId: 2,
+    cat:"react",
+    subc: "lifecycle",
   },
 ];

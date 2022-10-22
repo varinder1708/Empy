@@ -6,8 +6,15 @@ import {
   useParams,
 } from "react-router-dom";
 
-export const getParams = () => {
-  let { category } = useParams();
-  console.log(category);
-  return category;
+export const getParamsfromurl = (val) => {
+  let { category:categoryFromUrl,subcategory:subcategoryFromUrl } = useParams();
+  
+  return [categoryFromUrl,subcategoryFromUrl];
+  //return ["html","introduction"];
+};
+
+export const fetchAllSubCategories = (subCategory_data, category) => {
+  return subCategory_data.filter((obj) => {
+    return obj.cat === category;
+  });
 };
