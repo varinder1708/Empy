@@ -1,5 +1,5 @@
 import React from "react";
-import { content_data } from "../../data/Content";
+import { content_data } from "../data/Content";
 import {
   getParamsfromurl,
   createMarkup,

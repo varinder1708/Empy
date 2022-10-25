@@ -7,7 +7,7 @@ import {
   useProSidebar,
 } from "react-pro-sidebar";
 import { Link } from "react-router-dom";
-import { subCategory_data } from "../../data/subCat";
+import { subCategory_data } from "../data/subCat";
 import { getParamsfromurl, fetchAllSubCategories } from "../config/Util";
 
 const SideBar = () => {
@@ -27,10 +27,11 @@ const SideBar = () => {
           {fetchAllSubCategories(subCategory_data, categoryFromUrl).map(
             (data, key) => {
               return (
-                <MenuItem>
+                <MenuItem key={data.subc}>
                   <Link
                     to={"/" + data.cat + "/" + data.subc}
                     className="nav-link"
+                    key={data.subc}
                   >
                     {categoryFromUrl} {data.subc}
                   </Link>
