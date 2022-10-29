@@ -1,7 +1,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
-module.exports = {
+const clientConfig = {
   output: {
     path: path.join(__dirname, "/public"), // the bundle output path
     filename: "bundle.js", // the name of the bundle
@@ -35,3 +35,4 @@ module.exports = {
     ],
   },
 };
+module.exports=[clientConfig];
