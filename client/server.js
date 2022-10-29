@@ -11,13 +11,33 @@ const  fs = require("fs");
 //     res.send("aaaaaaaaaa");
  
 // })
+function handleRender(req, res) {
+    //  const reactHtml = ReactDOMServer.renderToString(<App/>);
+    const reactHtml ="aaaaaaaaaaaaaaaaaaaaaa";
+      const htmlTemplate = `<!DOCTYPE html>
+  <html>
+      <head>
+          <title>Universal React server bundle</title>
+          
+          </head>
+      <body>
+          <div id="app">${reactHtml}</div>
+          <script src="/bundle.js"></script>
+      </body>
+  </html>`;
+      res.send(htmlTemplate);
+  }
+
+  
 app.use(express.static(path.join(__dirname + "/public")))
 
 app.get('/html/basic', function (req, res) {
-    res.sendFile((path.join(__dirname+'/public/index.html')))
+    handleRender(req,res)
+    //res.sendFile((path.join(__dirname+'/public/index.html')))
 });
 app.get('/html', function (req, res) {
-    res.sendFile((path.join(__dirname+'/public/index.html')))
+    handleRender(req,res)
+    //res.sendFile((path.join(__dirname+'/public/index.html')))
 });
 app.get('/:cat', function (req, res) {
     res.sendFile((path.join(__dirname+'/public/index.html')))
@@ -25,11 +45,11 @@ app.get('/:cat', function (req, res) {
 
 
 app.get('/:cat/:subcategory', function (req, res) {
-    
-    console.log("bbbbbbbbbbbb") 
-    console.log(req.params.subcategory);
-     console.log(req.params.cat)
-     res.sendFile((path.join(__dirname+'/public/index.html')))
+    handleRender(req,res)
+    // console.log("bbbbbbbbbbbb") 
+    // console.log(req.params.subcategory);
+    //  console.log(req.params.cat)
+    //  res.sendFile((path.join(__dirname+'/public/index.html')))
 });
 // app.get('/:cat', function (req, res) {
 //     res.sendFile((path.join(__dirname+'/public/index.html')))
