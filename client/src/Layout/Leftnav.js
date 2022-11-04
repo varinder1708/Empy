@@ -9,7 +9,7 @@ import {
 import { Link } from "react-router-dom";
 import { subCategory_data } from "../data/subCat";
 import { getParamsfromurl, fetchAllSubCategories } from "../config/Util";
-
+import {uppercase,capitalizeFirstLetter} from "../config/Util";
 const SideBar = () => {
   const { collapseSidebar } = useProSidebar();
 
@@ -33,7 +33,7 @@ const SideBar = () => {
                     className="nav-link"
                     key={data.subc}
                   >
-                    {categoryFromUrl} {data.subc}
+                    {uppercase(categoryFromUrl)} {capitalizeFirstLetter(data.subc)}
                   </Link>
                 </MenuItem>
               );

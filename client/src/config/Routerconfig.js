@@ -1,22 +1,20 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+// import { renderRoutes } from "react-router-config";
+
 import Notfound from "../components/Notfound";
 import Content from "../Layout/Content";
-
-
+// import RoutesContent from "./RoutesContent";
 const Routerconfig = () => {
   return (
-    <>
-      
-      <Routes>
-      <Route exact path="/:category/:subcategory" element={<Content/>}></Route>
-      <Route exact path="/:category" element={<Content/>}></Route>
-        <Route exact path="/" element={<Content />}></Route>
-        
-        <Route path="*" element={<Notfound/>}>
-        </Route>
-      </Routes>
-    </>
+    // <>{renderRoutes(RoutesContent)}</>
+    <Routes>
+      <Route exact path="/:category/:subcategory" element={<Content />}></Route>
+      <Route exact path="/:category" element={<Content />}></Route>
+      <Route exact path="/" element={<Content />}></Route>
+
+      <Route path="*" element={<Notfound />}></Route>
+    </Routes>
   );
 };
 

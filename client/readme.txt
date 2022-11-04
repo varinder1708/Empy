@@ -1,3 +1,23 @@
+put build in public folder
+nodemon index.js
+
+Download heroku installer
+cdm prompt->
+heroku login
+heroku create tonygeneric
+git init
+git add 
+git commit 
+go to https://dashboard.heroku.com/apps/tonygeneric/deploy/heroku-git
+heroku git:remote -a tonygeneric
+heroku git:remote -a generictwo
+git push heroku master
+
+
+
+
+
+
 Run the app with npm run serve. Open your browser on http://localhost:3030/. 
 
 Run npm run build in the terminal

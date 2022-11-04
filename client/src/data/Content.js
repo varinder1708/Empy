@@ -12,7 +12,37 @@ export const content_data= [
         <li>HTML elements tell the browser how to display the content</li>
         <li>HTML elements label pieces of content such as "this is a heading", "this 
         is a paragraph", "this is a link", etc.</li>
-      </ul>`
+      </ul>
+      <h2>HTML Quiz Test</h2>
+      <p>Test your HTML skills with our HTML Quiz!</p>
+      <img src="/images/myfirstheading.png"/>
+      `
+    },
+    {
+      id: 2,
+      cat:"html",
+      subc: "basic",
+      content:`<h1>HTML BASICS</h1>
+      <h2>What is HTML?</h2> 
+      <h2>HTML Quiz Test</h2>
+      <p>Test your HTML skills with our HTML Quiz!</p>
+      <img src="/images/myfirstheading.png"/>
+      `
+    },
+    {
+      id: 3,
+      cat:"html",
+      subc: "comments",
+      content:`<h1>HTML COMMENTS</h1>
+      <h2>What is HTML?</h2> 
+      <h2>HTML Quiz Test</h2>
+      <p>Test your HTML skills with our HTML Quiz!</p>
+      <img src="/images/myfirstheading.png"/>
+      <h2>What is HTML?</h2> 
+      <h2>HTML Quiz Test</h2>
+      <p>Test your HTML skills with our HTML Quiz!</p>
+      <img src="/images/myfirstheading.png"/>
+      `
     }
   ];
   

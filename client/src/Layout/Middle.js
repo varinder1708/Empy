@@ -17,7 +17,7 @@ const Middle = () => {
 
   return (
     <>
-      <div dangerouslySetInnerHTML={createMarkup(data)} />
+      <div className="container mb-4 mt-4" dangerouslySetInnerHTML={createMarkup(data)} />
     </>
   );
 };

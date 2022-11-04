@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import SideBar from "./SideBar";
+import SideBar from "./Leftnav";
 import Middle from "./Middle";
 
 const Content = () => {

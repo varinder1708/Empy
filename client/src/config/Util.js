@@ -18,14 +18,20 @@ export const fetchAllSubCategories = (subCategory_data, category) => {
     return obj.cat === category;
   });
 };
-
-export const createMarkup = (text) => {
-  return { __html: text };
-};
-
 export const getContentforCategoryandSubC=(content_data,categoryFromUrl,subcategoryFromUrl)=>{
   const content= content_data.filter(
     (obj) => obj.cat === categoryFromUrl && obj.subc === subcategoryFromUrl
   );
   return content && content[0] && content[0].content;
  }
+export const createMarkup = (text) => {
+  return { __html: text };
+};
+export const capitalizeFirstLetter=(string)=> {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
+export const uppercase=(str)=>{
+  return str.toUpperCase();
+}
+
+
