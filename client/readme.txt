@@ -6,11 +6,11 @@ cdm prompt->
 heroku login
 heroku create tonygeneric
 git init
-git add 
-git commit 
+git add .
+git commit -am "" 
 go to https://dashboard.heroku.com/apps/tonygeneric/deploy/heroku-git
 heroku git:remote -a tonygeneric
-heroku git:remote -a generictwo
+
 git push heroku master
 
 

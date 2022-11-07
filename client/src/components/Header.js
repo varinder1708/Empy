@@ -1,11 +1,10 @@
 import React from "react";
-import {Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { category_data } from "../data/category";
-import {uppercase} from "../config/Util";
 
 function Header() {
   return (
@@ -17,13 +16,15 @@ function Header() {
           <Nav className="me-auto">
             {category_data.map((data, key) => {
               return (
-                <Link to={data.cat} className="nav-link">{uppercase(data.cat)}</Link>
+                <Link to={data.cat} className="nav-link">
+                  {uppercase(data.cat)}
+                </Link>
                 // <Nav.Link to={data.cat}>{data.cat}</Nav.Link>
               );
             })}
-<Nav.Item>
+            {/* <Nav.Item>
         <Nav.Link href="/html/intro">Active</Nav.Link>
-      </Nav.Item>
+      </Nav.Item> */}
             {/* <Nav.Link href="#features">Features</Nav.Link>
             <Nav.Link href="#pricing">Pricing</Nav.Link> */}
 
